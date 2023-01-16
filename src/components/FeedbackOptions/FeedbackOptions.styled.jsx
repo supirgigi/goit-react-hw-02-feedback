@@ -1,7 +1,6 @@
 import styled from '@emotion/styled';
 
 export const OptionsList = styled.ul`
-  margin-bottom: 20px;
   display: flex;
   gap: 10px;
 `;
