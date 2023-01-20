@@ -3,21 +3,19 @@ import { OptionsList, OptionsBtn } from './FeedbackOptions.styled';
 
 const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (
-    <>
-      <OptionsList>
-        {options.map(option => (
-          <li key={option}>
-            <OptionsBtn
-              onClick={() => {
-                onLeaveFeedback(option);
-              }}
-            >
-              {option}
-            </OptionsBtn>
-          </li>
-        ))}
-      </OptionsList>
-    </>
+    <OptionsList>
+      {options.map(option => (
+        <li key={option}>
+          <OptionsBtn
+            onClick={() => {
+              onLeaveFeedback(option);
+            }}
+          >
+            {option}
+          </OptionsBtn>
+        </li>
+      ))}
+    </OptionsList>
   );
 };
 
